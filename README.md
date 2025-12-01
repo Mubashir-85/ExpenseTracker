@@ -1,11 +1,56 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Expense Tracker
 
-Currently, two official plugins are available:
+This is a simple Expense Tracker built using React. It allows users to add expenses, display them in a list, calculate the total amount spent, and remove items when needed. The project is designed to help beginners understand component structure, props, state management, and basic data handling in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Features
+
+· Add new expenses with a title and amount
+
+· Display all expenses in a clean list
+
+· Automatically calculate and update the total expense
+
+· Remove an expense from the list
+
+· Component-based folder structure
+
+· Built with React hooks such as useState and useRef
+
+
+
+Tech Stack
+
+· React
+
+· JavaScript
+
+· Tailwind CSS (for styling)
+
+· Vite (for fast development environment)
+
+
+
+
+How It Works
+Adding an Expense
+
+Users can enter a title and an amount in the input fields and click "Add Expense".
+The parent component (App.jsx) receives the new expense and updates the state.
+
+Displaying the Expense List
+
+The ExpenseList component receives the array of expenses via props and displays each item.
+
+Deleting an Expense
+
+Each item in the list has a "Delete" button. Clicking it triggers a delete function in the parent component, updating the state.
+
+Calculating Total
+
+The total is automatically calculated by summing all expense amounts using JavaScript's reduce() method.
 
 ## React Compiler
 

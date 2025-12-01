@@ -2,7 +2,8 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className='font-bold text-xl md:text-2xl text-blue-400 '>Expense Tracker</div>
+    <div className="text-3xl font-bold text-blue-600 mb-6 tracking-wide"
+>Expense Tracker</div>
   )
 }
 
